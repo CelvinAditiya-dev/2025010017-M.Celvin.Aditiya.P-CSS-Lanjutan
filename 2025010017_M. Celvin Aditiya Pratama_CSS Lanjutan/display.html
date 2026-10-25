@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik Display | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik Display</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 5 — Display Block</h2>
+  <div class="demo"><span class="block">Satu</span><span class="block">Dua</span></div>
+  <p>Elemen block memulai baris baru dan umumnya mengambil lebar yang tersedia. Width dan height dapat diterapkan.</p>
+</section>
+<section>
+  <h2>Praktik 6 — Display Inline</h2>
+  <div class="demo"><span class="inline">Satu</span> <span class="inline">Dua</span> <span class="inline">Tiga</span></div>
+  <p>Elemen inline tetap mengalir pada baris yang sama. Width dan height tidak mengatur ukurannya seperti pada elemen block.</p>
+</section>
+<section>
+  <h2>Praktik 7 — Display Inline-block</h2>
+  <div class="demo inline-wrap"><div class="inline-card">Produk 1</div><div class="inline-card">Produk 2</div><div class="inline-card">Produk 3</div><div class="inline-card">Produk 4</div></div>
+  <p>Inline-block dapat berada sejajar seperti inline, tetapi dapat diberi width dan height.</p>
+</section>
+<section>
+  <h2>Praktik 8 — Display None</h2>
+  <p>Bagian pertama terlihat.</p><p class="hidden-demo">Bagian kedua disembunyikan dengan display:none.</p><p>Bagian ketiga terlihat; tidak ada ruang kosong dari bagian kedua.</p>
+</section>
+<style>
+.block{display:block;width:200px;min-height:50px;padding:10px;margin:10px;border:1px solid #2563eb;background:#dbeafe}
+.inline{display:inline;background:#cbd5e1;padding:8px;margin:8px}
+.inline-card{display:inline-block;vertical-align:top;width:160px;min-height:90px;padding:15px;margin:8px;border:1px solid #2563eb;background:#dbeafe}
+.hidden-demo{display:none}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>

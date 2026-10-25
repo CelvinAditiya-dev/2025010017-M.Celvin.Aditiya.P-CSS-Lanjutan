@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik Float dan Layout | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik Float dan Layout</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 13 — Float Left dan Right</h2>
+  <div class="demo float-demo"><div class="float-image">GAMBAR</div><p>Elemen float membuat teks mengalir di sekelilingnya. Coba ubah <code>float:left</code> menjadi <code>float:right</code> pada CSS. Tambahkan kalimat untuk melihat aliran teks lebih jelas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum.</p></div>
+</section>
+<section>
+  <h2>Praktik 14 — Clear Float</h2>
+  <div class="float-left">Float kiri</div><div class="float-right">Float kanan</div>
+  <div class="clear-footer">Bagian setelah float — clear: both</div>
+</section>
+<section>
+  <h2>Praktik 15 dan 16 — Layout Dua Kolom</h2>
+  <div class="layout-float">
+    <aside class="side-float"><h3>Sidebar</h3><ul><li>Beranda</li><li>Artikel</li><li>Kontak</li></ul></aside>
+    <article class="main-float"><h3>Konten Utama</h3><p>Layout ini menggunakan float untuk membuat sidebar dan konten utama. Footer berada di bawah kedua kolom karena clear:both.</p></article>
+    <div class="clear"></div>
+  </div>
+</section>
+<style>
+.float-image{float:left;width:130px;height:90px;margin:0 15px 10px 0;border:1px solid #2563eb;background:#dbeafe;display:grid;place-items:center}
+.float-left,.float-right{width:150px;min-height:80px;padding:15px;border:1px solid #2563eb;background:#dbeafe}
+.float-left{float:left}.float-right{float:right}
+.clear-footer{clear:both;padding:20px;border:1px solid #94a3b8;background:#f8fafc}
+.layout-float{border:1px dashed #94a3b8;padding:10px}
+.side-float{float:left;width:30%;padding:15px;border:1px solid #2563eb;background:#dbeafe;box-sizing:border-box}
+.main-float{float:left;width:70%;padding:15px;border:1px solid #94a3b8;box-sizing:border-box}
+.clear{clear:both}
+@media(max-width:600px){.side-float,.main-float{float:none;width:100%}}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>

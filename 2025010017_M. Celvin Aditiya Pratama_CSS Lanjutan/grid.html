@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik CSS Grid | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik CSS Grid</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 23 — Grid Dasar</h2>
+  <p>Grid di bawah menggunakan tiga kolom. Coba ubah menjadi <code>repeat(2, 1fr)</code>.</p>
+  <div class="grid-basic"><div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div><div class="item">5</div><div class="item">6</div></div>
+</section>
+<section>
+  <h2>Praktik 24 — Proporsi Kolom</h2>
+  <div class="grid-proportion"><div class="item">1fr</div><div class="item">2fr</div><div class="item">1fr</div></div>
+  <p><code>fr</code> berarti unit pecahan ruang yang tersedia pada grid.</p>
+</section>
+<section>
+  <h2>Praktik 25 — Galeri Grid</h2>
+  <div class="gallery"><div class="foto">Foto 1</div><div class="foto">Foto 2</div><div class="foto">Foto 3</div><div class="foto">Foto 4</div><div class="foto">Foto 5</div><div class="foto">Foto 6</div></div>
+</section>
+<style>
+.grid-basic{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.grid-proportion{display:grid;grid-template-columns:1fr 2fr 1fr;gap:20px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.foto{min-height:100px;display:grid;place-items:center}
+@media(max-width:700px){.grid-basic,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.grid-basic,.grid-proportion,.gallery{grid-template-columns:1fr}}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>
