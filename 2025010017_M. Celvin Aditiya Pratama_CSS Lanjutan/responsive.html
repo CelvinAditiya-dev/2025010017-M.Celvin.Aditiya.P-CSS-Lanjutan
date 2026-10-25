@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik Responsive Design | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik Responsive Design</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 26 — Media Query</h2>
+  <p>Container berubah lebarnya berdasarkan ukuran viewport. Uji pada desktop, tablet, dan ponsel.</p>
+  <div class="responsive-container">Lebar container 80% pada layar lebar dan 100% pada layar kecil.</div>
+  <p class="muted">Breakpoint contoh: 800px dan 600px.</p>
+</section>
+<section>
+  <h2>Praktik 27 — Layout Responsif dengan Flexbox</h2>
+  <div class="responsive-layout"><aside class="responsive-sidebar">Sidebar</aside><main class="responsive-content">Konten utama. Pada layar kecil, kedua bagian tersusun vertikal.</main></div>
+</section>
+<section>
+  <h2>Praktik 28 — Grid Responsif</h2>
+  <p>Jumlah kolom: tiga pada desktop, dua pada tablet, dan satu pada ponsel.</p>
+  <div class="responsive-grid"><div class="item">Kartu 1</div><div class="item">Kartu 2</div><div class="item">Kartu 3</div><div class="item">Kartu 4</div><div class="item">Kartu 5</div><div class="item">Kartu 6</div></div>
+</section>
+<section>
+  <h2>Praktik 29 — Gambar Responsif</h2>
+  <div class="image-card"><img src="https://placehold.co/640x360/DBEAFE/1E3A8A?text=Gambar+Responsif" alt="Contoh gambar responsif"><h3>Contoh Gambar</h3><p>Gambar memakai max-width:100% dan height:auto agar tidak keluar dari kartu.</p></div>
+</section>
+<style>
+.responsive-container{width:80%;margin:0 auto;padding:20px;background:#dbeafe;border:1px solid #60a5fa;border-radius:8px}
+.responsive-layout{display:flex;gap:16px}
+.responsive-sidebar{flex:1;padding:20px;background:#dbeafe;border:1px solid #60a5fa}
+.responsive-content{flex:3;padding:20px;border:1px solid #cbd5e1}
+.responsive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.image-card{max-width:360px;padding:12px;border:1px solid #cbd5e1;border-radius:10px}
+.image-card img{display:block;width:100%;height:auto;border-radius:6px}
+@media(max-width:800px){.responsive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.responsive-container{width:95%}}
+@media(max-width:600px){.responsive-layout{flex-direction:column}.responsive-grid{grid-template-columns:1fr}.responsive-container{width:100%}h1{font-size:1.6rem}}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>

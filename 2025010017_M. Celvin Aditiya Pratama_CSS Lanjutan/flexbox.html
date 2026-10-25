@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik Flexbox | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik Flexbox</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 19 — Flex Direction</h2>
+  <p>Container pertama menggunakan row (horizontal); container kedua menggunakan column (vertikal).</p>
+  <div class="flex-row"><div class="item">Item 1</div><div class="item">Item 2</div><div class="item">Item 3</div><div class="item">Item 4</div></div>
+  <div class="flex-column"><div class="item">Item A</div><div class="item">Item B</div><div class="item">Item C</div></div>
+</section>
+<section>
+  <h2>Praktik 20 — Justify Content dan Align Items</h2>
+  <div class="flex-align"><div class="item">Satu</div><div class="item">Dua</div><div class="item">Tiga</div></div>
+  <p><code>justify-content</code> mengatur distribusi pada sumbu utama; <code>align-items</code> mengatur item pada sumbu silang.</p>
+</section>
+<section>
+  <h2>Praktik 21 — Flex Wrap dan Gap</h2>
+  <div class="flex-cards">
+    <div class="kartu">Produk 1</div><div class="kartu">Produk 2</div><div class="kartu">Produk 3</div>
+    <div class="kartu">Produk 4</div><div class="kartu">Produk 5</div><div class="kartu">Produk 6</div>
+  </div>
+</section>
+<section>
+  <h2>Praktik 22 — Navigasi Flexbox</h2>
+  <nav class="demo-nav"><a href="index.html">Beranda</a><a href="project.html">Profil</a><a href="grid.html">Produk</a><a href="responsive.html">Kontak</a></nav>
+</section>
+<style>
+.flex-row{display:flex;flex-direction:row;gap:8px;flex-wrap:wrap}
+.flex-column{display:flex;flex-direction:column;gap:8px;margin-top:15px}
+.flex-align{display:flex;min-height:160px;justify-content:space-between;align-items:center;border:1px solid #94a3b8;padding:10px;gap:8px}
+.flex-cards{display:flex;flex-wrap:wrap;gap:12px}
+.flex-cards .kartu{flex:1 1 150px}
+.demo-nav{position:static;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:12px;background:#0f172a;border-radius:8px}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>
