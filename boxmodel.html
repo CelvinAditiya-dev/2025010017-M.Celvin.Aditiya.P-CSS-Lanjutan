@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktik Box Model | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Praktik Box Model</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section>
+  <h2>Praktik 1 dan 4 — Ukuran Box</h2>
+  <p>Box model terdiri dari content, padding, border, dan margin. Coba ubah nilai CSS pada kelas di bawah ini.</p>
+  <div class="demo">
+    <div class="model-box">Konten Box Model</div>
+  </div>
+  <pre>.model-box {
+  width: 300px;
+  min-height: 100px;
+  padding: 20px;
+  border: 5px solid #2563eb;
+  margin: 20px;
+  background: #dbeafe;
+  box-sizing: content-box;
+}</pre>
+</section>
+<section>
+  <h2>Praktik 2 — Padding Multi Nilai</h2>
+  <div class="padding-demo">
+    <div class="pad a">A — padding: 20px</div>
+    <div class="pad b">B — padding: 10px 30px</div>
+    <div class="pad c">C — padding: 10px 20px 30px</div>
+    <div class="pad d">D — padding: 5px 10px 15px 20px</div>
+  </div>
+  <p class="muted">Urutan empat nilai adalah atas, kanan, bawah, kiri (top, right, bottom, left).</p>
+</section>
+<section>
+  <h2>Praktik 3 — Margin</h2>
+  <div class="margin-box one">Box 1 — margin-bottom: 10px</div>
+  <div class="margin-box two">Box 2 — margin: 20px 0</div>
+  <div class="margin-box three">Box 3 — margin-top: 30px</div>
+  <p><code>margin: 0 auto</code> dapat memusatkan elemen block yang mempunyai lebar tertentu pada ruang horizontal yang tersedia.</p>
+</section>
+<section>
+  <h2>Praktik 17 — Content-box dan Border-box</h2>
+  <div class="compare content-box">content-box: lebar total bertambah karena padding dan border</div>
+  <div class="compare border-box">border-box: padding dan border termasuk dalam width</div>
+</section>
+<style>
+.model-box { width:300px; min-height:100px; padding:20px; border:5px solid #2563eb; margin:20px; background:#dbeafe; }
+.pad { border:1px solid #334155; margin:10px 0; background:#eff6ff; }
+.pad.a {padding:20px}.pad.b {padding:10px 30px}.pad.c {padding:10px 20px 30px}.pad.d {padding:5px 10px 15px 20px}
+.margin-box {width:250px; padding:15px; border:2px solid #2563eb; background:#dbeafe}
+.margin-box.one {margin-bottom:10px}.margin-box.two {margin:20px 0}.margin-box.three {margin-top:30px}
+.compare {width:300px; padding:20px; border:5px solid #2563eb; margin:10px 0; background:#dbeafe}
+.content-box {box-sizing:content-box}.border-box {box-sizing:border-box}
+@media(max-width:500px){.model-box,.compare{max-width:100%}}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project — Profil Responsif | CSS Lanjutan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><div class="wrap"><h1>Mini Project — Profil Responsif</h1><p>Modul Praktikum Pemrograman Web 1 — CSS Lanjutan</p></div></header>
+  <nav aria-label="Navigasi utama"><a href="index.html">Beranda</a>
+<a href="boxmodel.html">Box Model</a>
+<a href="display.html">Display</a>
+<a href="position.html">Position</a>
+<a href="float.html">Float</a>
+<a href="flexbox.html">Flexbox</a>
+<a href="grid.html">Grid</a>
+<a href="responsive.html">Responsif</a>
+<a href="project.html">Mini Project</a></nav>
+  <main>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">MINI PROJECT CSS LANJUTAN</p>
+    <h2>Halo, saya Celvin!</h2>
+    <p>Mahasiswa Rekayasa Perangkat Lunak yang sedang mempelajari pengembangan website menggunakan HTML dan CSS.</p>
+    <a class="button" href="#tentang">Kenali Saya</a>
+  </div>
+  <div class="avatar" aria-label="Ilustrasi profil">CA</div>
+</section>
+<section id="tentang">
+  <h2>Tentang Saya</h2>
+  <p>Saya sedang berlatih membuat halaman web yang rapi, mudah digunakan, dan responsif pada berbagai ukuran layar.</p>
+</section>
+<section>
+  <h2>Materi yang Dipelajari</h2>
+  <div class="cards project-cards">
+    <article class="panel"><span class="skill-icon">▦</span><h3>Box Model</h3><p>Mengatur ukuran, padding, border, dan margin.</p></article>
+    <article class="panel"><span class="skill-icon">↔</span><h3>Flexbox</h3><p>Menyusun elemen dan mengatur alignment.</p></article>
+    <article class="panel"><span class="skill-icon">▤</span><h3>CSS Grid</h3><p>Membuat susunan baris dan kolom.</p></article>
+  </div>
+</section>
+<section>
+  <h2>Target Praktikum</h2>
+  <ul><li>Menggunakan CSS eksternal.</li><li>Membuat navigasi yang berfungsi.</li><li>Menggunakan Flexbox dan Grid.</li><li>Menerapkan dua breakpoint responsif.</li><li>Menguji halaman di desktop, tablet, dan ponsel.</li></ul>
+</section>
+<style>
+.hero{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(22px,5vw,48px);background:linear-gradient(135deg,#eff6ff,#dbeafe)}
+.hero>div:first-child{max-width:650px}
+.hero h2{font-size:clamp(1.8rem,4vw,3rem);margin:0 0 12px}
+.eyebrow{color:#1d4ed8;font-size:.8rem;font-weight:bold;letter-spacing:2px}
+.avatar{flex:0 0 150px;width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:#2563eb;color:white;font-size:2.5rem;font-weight:bold;border:8px solid white;box-shadow:0 5px 20px #93c5fd}
+.skill-icon{font-size:1.8rem;color:#2563eb}
+@media(max-width:600px){.hero{flex-direction:column-reverse;align-items:flex-start}.avatar{width:100px;height:100px;flex-basis:100px;font-size:1.8rem}.project-cards{grid-template-columns:1fr}}
+</style>
+
+  </main>
+  <footer><div class="wrap"><p>Praktikum CSS Lanjutan · HTML dan CSS eksternal</p></div></footer>
+</body>
+</html>
